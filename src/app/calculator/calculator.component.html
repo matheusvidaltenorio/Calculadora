@@ -1,0 +1,22 @@
+<div class="calculator">
+    <input type="text" [(ngModel)]="display" class="display" disabled>
+  
+    <div class="buttons">
+      <div class="numbers">
+        <button (click)="appendToDisplay(number)" *ngFor="let number of numbers">{{ number }}</button>
+        <button (click)="clearDisplay()">C</button>
+        <button (click)="calculate()">=</button>
+      </div>
+      <div class="operators">
+        <button (click)="appendToDisplay('+')">+</button>
+        <button (click)="appendToDisplay('-')">-</button>
+        <button (click)="appendToDisplay('*')">*</button>
+        <button (click)="appendToDisplay('/')">/</button>
+      </div>
+    </div>
+  </div>
+  
+
+  
+
+  
